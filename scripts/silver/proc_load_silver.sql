@@ -17,7 +17,7 @@ Usage Example:
     EXEC Silver.load_silver;
 ===============================================================================
 */
-
+EXEC silver.load_silver;
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN 
@@ -35,7 +35,7 @@ BEGIN
     PRINT '>> Truncating Table: silver.crm_cust_info';
     TRUNCATE TABLE silver.crm_cust_info;
     
-    PRINT '>> Inserting Data Into: silver.crm_cust_info':
+    PRINT '>> Inserting Data Into: silver.crm_cust_info';
     INSERT INTO silver.crm_cust_info (
     cst_id,
     cst_key, 
